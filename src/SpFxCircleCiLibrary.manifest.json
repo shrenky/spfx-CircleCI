@@ -1,0 +1,9 @@
+{
+  "id": "0185a981-e6d9-4e63-858e-161dff596f3c",
+  "alias": "SpFxCircleCiLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}
