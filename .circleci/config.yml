@@ -36,7 +36,7 @@ jobs:
           
       # run gulp
       - run: echo "run gulp tasks"
-      - run: npm clean
+      - run: gulp clean
       - run: gulp bundle
 
       # run tests!
