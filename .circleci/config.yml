@@ -32,10 +32,10 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-          
+
       # run gulp
-      - run: gulp clean
-      - run: gulp bundle
+      - run: npm clean
+      - run: npm build
 
       # run tests!
       - run: npm test
