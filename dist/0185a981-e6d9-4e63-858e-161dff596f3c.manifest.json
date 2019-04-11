@@ -1,0 +1,19 @@
+{
+  "id": "0185a981-e6d9-4e63-858e-161dff596f3c",
+  "alias": "SpFxCircleCiLibrary",
+  "componentType": "Library",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+  "loaderConfig": {
+    "entryModuleId": "sp-fx-circle-ci-library",
+    "internalModuleBaseUrls": [
+      "https://localhost:4321/"
+    ],
+    "scriptResources": {
+      "sp-fx-circle-ci-library": {
+        "type": "path",
+        "path": "dist/sp-fx-circle-ci-library.js"
+      }
+    }
+  }
+}

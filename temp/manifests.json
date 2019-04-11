@@ -1,0 +1,66 @@
+[
+  {
+    "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a",
+    "alias": "SPLodashSubset",
+    "componentType": "Library",
+    "version": "1.8.0",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-lodash-subset",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-lodash-subset/"
+      ],
+      "scriptResources": {
+        "sp-lodash-subset": {
+          "type": "path",
+          "path": "dist/sp-lodash-subset.js"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "7263c7d0-1d6a-45ec-8d85-d4d1d234171b",
+    "alias": "SPCoreLibrary",
+    "componentType": "Library",
+    "version": "1.8.0",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-core-library",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/node_modules/@microsoft/sp-core-library/"
+      ],
+      "scriptResources": {
+        "sp-core-library": {
+          "type": "localizedPath",
+          "defaultPath": "dist/sp-core-library_en-us.js"
+        },
+        "@microsoft/sp-lodash-subset": {
+          "type": "component",
+          "version": "1.8.0",
+          "id": "73e1dc6c-8441-42cc-ad47-4bd3659f8a3a"
+        }
+      }
+    },
+    "isInternal": true
+  },
+  {
+    "id": "0185a981-e6d9-4e63-858e-161dff596f3c",
+    "alias": "SpFxCircleCiLibrary",
+    "componentType": "Library",
+    "version": "0.0.1",
+    "manifestVersion": 2,
+    "loaderConfig": {
+      "entryModuleId": "sp-fx-circle-ci-library",
+      "internalModuleBaseUrls": [
+        "https://localhost:4321/"
+      ],
+      "scriptResources": {
+        "sp-fx-circle-ci-library": {
+          "type": "path",
+          "path": "dist/sp-fx-circle-ci-library.js"
+        }
+      }
+    }
+  }
+]
