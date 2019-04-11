@@ -4,7 +4,7 @@
     "name": "spfx-circle-ci-client-side-solution",
     "id": "a20917ec-05f0-43c8-9dc2-93db6504657f",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true,
+    "includeClientSideAssets": false,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false
   },
