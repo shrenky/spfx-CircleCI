@@ -17,6 +17,12 @@ jobs:
     working_directory: ~/repo
 
     steps:
+
+      - run:
+          name: Creating soltuion folder
+          command: |
+            mkdir ~/repo/solution
+
       - checkout
 
       # Download and cache dependencies
@@ -38,7 +44,10 @@ jobs:
       # run gulp
       - run: echo "run gulp tasks"
       - run: gulp clean
-      - run: gulp bundle
+      - run: gulp bundle --ship
+      - run: gulp package-solution --ship
+      - store_artifacts:
+          path: ~/repo/sharepoint/solution/spfx-circle-ci.sppkg
 
       # run tests!
       - run: npm test
