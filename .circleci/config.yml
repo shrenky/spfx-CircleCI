@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Creating soltuion folder
           command: |
-            mkdir ./sharepoint/solution
+            mkdir /sharepoint/solution
 
       - checkout
 
