@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Creating soltuion folder
           command: |
-            mkdir /tmp/sharepoint/solution
+            mkdir /tmp/artifacts
 
       - checkout
 
