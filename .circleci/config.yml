@@ -27,8 +27,9 @@ jobs:
             - v1-dependencies-
 
       - run: npm install
-      #- run: npm install gulp --save-dev
+      
       - run: sudo npm link gulp
+      
       - save_cache:
           paths:
             - node_modules
