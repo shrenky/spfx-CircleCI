@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Creating soltuion folder
           command: |
-            mkdir ~/repo/solution
+            mkdir /repo/solution
 
       - checkout
 
@@ -47,7 +47,7 @@ jobs:
       - run: gulp bundle --ship
       - run: gulp package-solution --ship
       - store_artifacts:
-          path: ~/repo/sharepoint/solution/spfx-circle-ci.sppkg
+          path: /repo/sharepoint/solution/spfx-circle-ci.sppkg
 
       # run tests!
       - run: npm test
