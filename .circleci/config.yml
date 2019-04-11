@@ -39,7 +39,7 @@ jobs:
       # run gulp
       - run: echo "run gulp tasks"
       - run: gulp clean
-      - run: gulp bundle --ship
+      - run: gulp bundle
       - run: gulp package-solution --ship
       - store_artifacts:
           path: ./sharepoint/solution/spfx-circle-ci.sppkg
